@@ -1,7 +1,7 @@
-SpreeChileanRun
+Spree Chilean Run
 ===============
 
-Introduction goes here.
+This Spree extension adds address integration with chilean RUN.
 
 Installation
 ------------
@@ -9,7 +9,7 @@ Installation
 Add spree_chilean_run to your Gemfile:
 
 ```ruby
-gem 'spree_chilean_run'
+gem 'spree_chilean_run', branch: '3-0-stable'
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -18,6 +18,24 @@ Bundle your dependencies and run the installation generator:
 bundle
 bundle exec rails g spree_chilean_run:install
 ```
+
+Dependencies
+-------
+- [run_cl](https://bitbucket.org/mespina/run)
+
+
+Usage
+-------
+A `run` string field is added to the `Spree::Address` model. It's integrated with [run_cl](https://bitbucket.org/mespina/run) gem, so validations are performed automatically when persisting an address object. Validations are:
+
+- Presence
+- RUN format
+
+The field is added to markup inside:
+
+- `address` checkout step
+- Backend user address
+- Backend order address
 
 Testing
 -------
@@ -29,11 +47,9 @@ bundle
 bundle exec rake
 ```
 
-When testing your applications integration with this extension you may use it's factories.
+When testing your applications integration with this extension you may use it's factories. The `run` field is added to the Spree default `address` factory.
 Simply add this require statement to your spec_helper:
 
 ```ruby
 require 'spree_chilean_run/factories'
 ```
-
-Copyright (c) 2015 [name of extension creator], released under the New BSD License

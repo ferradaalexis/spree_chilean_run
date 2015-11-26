@@ -1,0 +1,6 @@
+<!-- insert_top ".inner"
+original 'fdd900137d39c3c74f74bca3a7ead5aa071d017f' -->
+<p class="form-group" id=<%="#{address_id}run" %>>
+  <%= form.label :run, Spree.t(:run) %><span class="required">*</span><br />
+  <%= form.text_field :run, :class => 'form-control run required' %>
+</p>

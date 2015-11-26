@@ -18,6 +18,7 @@ require File.expand_path('../dummy/config/environment.rb',  __FILE__)
 require 'rspec/rails'
 require 'database_cleaner'
 require 'ffaker'
+require 'run_cl'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -52,6 +53,8 @@ RSpec.configure do |config|
   # Adds convenient methods to request Spree's controllers
   # spree_get :index
   config.include Spree::TestingSupport::ControllerRequests, type: :controller
+  config.include Spree::TestingSupport::AuthorizationHelpers
+  config.include Devise::TestHelpers, type: :controller
 
   # == Mock Framework
   #

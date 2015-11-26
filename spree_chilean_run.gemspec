@@ -3,13 +3,12 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_chilean_run'
   s.version     = '3.0.4'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
-  s.required_ruby_version = '>= 2.0.0'
+  s.summary     = 'Spree address checkout integration with chilean RUN'
+  s.description = 'Spree address checkout integration with chilean RUN'
+  s.required_ruby_version = '>= 2.2'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = ['Sebastián Vicencio']
+  s.email     = ['sivicencio@gmail.com']
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")

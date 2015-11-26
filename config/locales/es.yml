@@ -1,11 +1,11 @@
-en:
+es:
   activerecord:
     attributes:
       spree/address:
-        run: RUN
+        run: RUT
       spree/order/bill_address:
-        run: RUN
+        run: RUT
       spree/order/ship_address:
-        run: RUN
+        run: RUT
   spree:
-    run: RUN
+    run: RUT

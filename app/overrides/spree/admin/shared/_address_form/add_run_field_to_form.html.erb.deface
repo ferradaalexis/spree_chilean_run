@@ -1,0 +1,6 @@
+<!-- insert_top "div[data-hook=address_fields]"
+original '9901f6727ca64a815198fa3314f8f45aa43c1077' -->
+<div class="form-group <%= "#{type}-row" %>">
+  <%= f.label :run, Spree.t(:run) %>
+  <%= f.text_field :run, class: 'form-control run' %>
+</div>
